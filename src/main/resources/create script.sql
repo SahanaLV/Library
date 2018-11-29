@@ -23,7 +23,7 @@ CREATE TABLE library.txn (bookID int NOT NULL,
 	FOREIGN KEY (memberID) REFERENCES library.member(memberID)
 );
 
-CREATE TABLE library.admin ( userName VARCHAR, password VARCHAR);
+CREATE TABLE library.admin ( userName VARCHAR(), password VARCHAR());
 
 insert into library.admin values ('admin','oRyvq8XIzUJeFqzi0GXl2C2DZvu9qHftw1f/2rN34Fg=')
 
